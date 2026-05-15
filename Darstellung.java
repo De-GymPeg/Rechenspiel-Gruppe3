@@ -35,6 +35,15 @@ public class Darstellung
 
         /* übrige Objekte initialisieren */
 
+        zahl1Label = new JLabel(""  , SwingConstants.CENTER);
+        operationLabel = new JLabel("", SwingConstants.CENTER);
+        zahl2Label = new JLabel(""  , SwingConstants.CENTER);
+
+        ergebnisField = new JTextField();
+        ergebnisField.setHorizontalAlignment(SwingConstants.CENTER);
+        button = new JButton("Prüfen");
+        feedbackLabel = new JLabel("", SwingConstants.CENTER);
+
         /* Hierarchie herstellen */
 
         frame.add(panel1);
