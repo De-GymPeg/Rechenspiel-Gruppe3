@@ -15,13 +15,15 @@ public class Logik extends Observable
     }
     
     void zahl1Setzen() {
-        // TODO
+        zahl1 = zufallszahlGeben(100);
         setChanged();
         notifyObservers();
     }
 
     void zahl2Setzen() {
-        // TODO
+        zahl2 = zufallszahlGeben(100);
+        setChanged();
+        notifyObservers();
     }
     
     void operationSetzen() {
@@ -35,20 +37,20 @@ public class Logik extends Observable
         switch (operation) {
             case "+":
                 // TODO
-                return false;
+                return zahl1 + zahl2 == ergebnis;
             case "-":
                 // TODO
-                return false;
+                return zahl1 - zahl2 == ergebnis;
             case "*":
                 // TODO
-                return false;
+                return zahl1 * zahl2 == ergebnis;
             default:
                 return false;
         }
     }
 
     int zufallszahlGeben(int grenze) {
-        // TODO
-        return 0;
+        Random random = new Random();
+        return random.nextInt(grenze);
     }
 }
