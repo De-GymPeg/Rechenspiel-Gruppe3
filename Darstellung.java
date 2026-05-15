@@ -2,6 +2,8 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.*;
 
+//LEGAT
+
 public class Darstellung
 {
     /* Attribute deklarieren */
